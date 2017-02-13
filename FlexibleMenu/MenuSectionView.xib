@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuSectionView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="MenuSectionView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQC-MA-OPK">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y02-Ts-02f">
+                    <rect key="frame" x="16" y="53" width="343" height="1"/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="kqg-t5-ylU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="y02-Ts-02f" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="59q-PL-qit"/>
+                <constraint firstAttribute="trailing" secondItem="y02-Ts-02f" secondAttribute="trailing" constant="16" id="75O-uT-aXr"/>
+                <constraint firstAttribute="bottom" secondItem="y02-Ts-02f" secondAttribute="bottom" id="IUF-61-fzD"/>
+                <constraint firstItem="RQC-MA-OPK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Jyb-eQ-A2Z"/>
+                <constraint firstAttribute="bottom" secondItem="RQC-MA-OPK" secondAttribute="bottom" id="RLh-sX-hxd"/>
+                <constraint firstItem="RQC-MA-OPK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fVJ-bB-Tmd"/>
+                <constraint firstAttribute="trailing" secondItem="RQC-MA-OPK" secondAttribute="trailing" id="u85-Yl-Toc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="sectionButton" destination="RQC-MA-OPK" id="DhH-PX-Efo"/>
+            </connections>
+            <point key="canvasLocation" x="-61" y="-163"/>
+        </view>
+    </objects>
+</document>
